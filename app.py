@@ -22,7 +22,7 @@ def load_artifacts():
 model, ohe, locality_means, global_mean, model_columns = load_artifacts()
 
 # Build the UI 
-st.title("🏡 Real Estate Rent Predictor [2024 Dataset Model Trained]")
+st.title("🏡 Real Estate Rent Predictor [kindly fill appropriate locality for better result ]")
 st.markdown("Enter the details of the property to get an estimated monthly rent.")
 
 # Create two columns for a cleaner layout
