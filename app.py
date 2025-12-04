@@ -22,8 +22,8 @@ def load_artifacts():
 model, ohe, locality_means, global_mean, model_columns = load_artifacts()
 
 # --- 2. Build the UI ---
-st.title("🏡 Real Estate Rent Predictor")
-st.markdown("Enter the details of the property to get an estimated monthly rent.")
+st.title("🏡 Real Estate Rent Predictor 2024 Dataset Model Trained")
+st.markdown("Enter the details of the property to get an estimated monthly rent. enjoy")
 
 # Create two columns for a cleaner layout
 col1, col2 = st.columns(2)
@@ -91,4 +91,5 @@ if st.button("Predict Rent"):
         st.success(f"💰 Estimated Monthly Rent: ₹ {int(prediction):,}")
         
     except Exception as e:
+
         st.error(f"An error occurred: {e}")
