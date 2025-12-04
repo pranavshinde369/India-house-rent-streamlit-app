@@ -4,7 +4,7 @@ import pandas as pd
 import numpy as np
 import pickle
 
-# --- 1. Load the Saved Artifacts ---
+# Load the Saved Artifacts artifacts
 @st.cache_resource
 def load_artifacts():
     with open('model.pkl', 'rb') as f:
@@ -21,7 +21,7 @@ def load_artifacts():
 
 model, ohe, locality_means, global_mean, model_columns = load_artifacts()
 
-# --- 2. Build the UI ---
+# Build the UI 
 st.title("🏡 Real Estate Rent Predictor [2024 Dataset Model Trained]")
 st.markdown("Enter the details of the property to get an estimated monthly rent.")
 
@@ -51,7 +51,7 @@ with col2:
     furnishing_options = {"Unfurnished": 0, "Semi-Furnished": 1, "Furnished": 2}
     furnishing = st.selectbox("Furnishing Status", list(furnishing_options.keys()))
 
-# --- 3. Prediction Logic ---
+#  Prediction Logic 
 if st.button("Predict Rent"):
     try:
         # 1. Prepare raw input dataframe
@@ -93,4 +93,5 @@ if st.button("Predict Rent"):
     except Exception as e:
 
         st.error(f"An error occurred: {e}")
+
 
