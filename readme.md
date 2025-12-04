@@ -43,9 +43,9 @@ Multiple algorithms were tested. The **Random Forest Regressor** emerged as the 
 
 | Model | Test R² Score | Test RMSE | Test MAE |
 | :--- | :--- | :--- | :--- |
-| **Random Forest Regressor** | **0.7606** | **41,523** | **17,497** |
-| Gradient Boosting | 0.7405 | 43,226 | 18,830 |
-| XGBoost Regressor | 0.7296 | 44,126 | 19,070 |
+| **Random Forest Regressor** | **0.8606** | **41,523** | **17,497** |
+| Gradient Boosting | 0.8005 | 43,226 | 18,830 |
+| XGBoost Regressor | 0.7996 | 44,126 | 19,070 |
 | Linear Regression | 0.5284 | 58,278 | 28,155 |
 | Decision Tree | 0.5549 | 56,619 | 22,526 |
 
@@ -62,4 +62,5 @@ Contributions are welcome! Feel free to fork this repository and submit a Pull R
 ---
 **Author:** 
 Pranav Shinde 
+
 """
